@@ -2,7 +2,7 @@
 
 Single Page UI converted from the visual design provided by BCG as an assignment. 
 
-It was really creative and challenging design to work on, right from extracting the assets i.e. from Photoshop and positioning of the background images, It was really cool task to work on.  
+It was really creative and challenging design to work on, right from extracting the assets i.e. from Photoshop and positioning of the images, It was really cool task to work on.  
 
 [Full Screen Shot of Design](https://gauravkumarsingh27.github.io/bcg_assignment/BCG_Assignment_Screenshot.png)
 

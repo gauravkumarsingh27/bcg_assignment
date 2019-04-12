@@ -22,5 +22,5 @@ This design can be best viewed in 1366*768 resolution and it is also not fully r
 
 
 ## Author
-Gaurav Kumar Singh
+Gaurav Kumar Singh -- [www.gauravkumarsingh.com](https://www.gauravkumarsingh.com)
 

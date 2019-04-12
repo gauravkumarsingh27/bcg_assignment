@@ -1,11 +1,17 @@
 # BCG Assignment
 
-Single Page UI converted from the visual design provided by BCG as an assignment.
+Single Page UI converted from the visual design provided by BCG as an assignment. 
+
+It was really creative and challenging design to work on, right from extracting the assets i.e. from Photoshop and positioning of the background images, It was really cool task to work on.  
+
+[Full Screen Shot of Design](https://gauravkumarsingh27.github.io/bcg_assignment/BCG_Assignment_Screenshot.png)
+
+Website URL - [https://gauravkumarsingh27.github.io/bcg_assignment](https://gauravkumarsingh27.github.io/bcg_assignment)
 
 
 ## Notes
 
-This design can be best viewed in 1366*768 resolution and it is also not responsive due to time constraint.
+This design can be best viewed in 1366*768 resolution and it is also not fully responsive due to time constraint.
 
 ## Built With
 

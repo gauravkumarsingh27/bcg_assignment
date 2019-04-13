@@ -9,12 +9,12 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #6d6f7d;
-  box-shadow: inset 0 0 6px rgba(0,4,17,.3);
+  box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
 }
 
 ::-webkit-scrollbar-track {
   background-color: #d3d4d9;
-  box-shadow: inset 0 0 6px rgba(0,4,17,.3);
+  box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
 }
 
 h1,
@@ -120,20 +120,6 @@ span.circular_seprator:after,
   line-height: 1.2;
   margin-bottom: 1.2rem;
 }
-
-@media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(10rem + 55px);
-    padding-bottom: 10rem;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0rem;
-    padding-left: 0rem;
-    margin: 0 .5rem;
-  }
-}
-
 
 .button {
   backface-visibility: hidden;
@@ -635,4 +621,106 @@ footer .text-muted {
 
 .social-icons .fas.fa-envelope {
   padding: 0.6em 0.55em 0.6em 0em
+}
+
+/* Desktop Viewport */
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin: 0 .5rem;
+  }
+}
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  header.masthead {
+    background-size: cover;
+  }
+
+  .challenge_bg_container {
+    padding-left: 2em;
+  }
+
+  .challenge_bg {
+    background-position: -205px 0px;
+  }
+
+  .challenge_content_container {
+    margin-top: 6em;
+    padding-right: 2em;
+  }
+
+  .our_approach .section_one {
+    margin-top: 0;
+  }
+
+  .thumbnail04 {
+    background-position: -80px 0px;
+  }
+
+  .our_approach .section_three .our_approach_content {
+    padding: 1em 15px 5em 10%;
+  }
+
+  .our_approach_content .space-after_content {
+    padding-right: 2em;
+  }
+
+  .mt-xs-2em {
+    margin-top: 2em;
+  }
+
+  .quotation {
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .quotation+.text-muted {
+    padding: 0 10%;
+  }
+
+  .social-icons,
+  .copyright {
+    text-align: center;
+  }
+
+  .social-icons span {
+    display: inline-block;
+    margin-bottom: 2em;
+  }
+
+  .social-icons .fas.fa-envelope {
+    padding: 0.6em;
+  }
+
+  .banner_large {
+    background-size: 290%;
+    height: 500px;
+    background-position: -240px -29px;
+  }
+
+  .advertise_container {
+    width: auto;
+  }
+
+  .advertise_post {
+    background-size: cover;
+    background-position: -307px 0;
+    margin-top: 2.5em;
+  }
+
+  .similar-project_container .project_one,
+  .similar-project_container .project_two,
+  .similar-project_container .project_three {
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }

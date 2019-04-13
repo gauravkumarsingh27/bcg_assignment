@@ -1,20 +1,11 @@
+html,
 body {
   font-family: 'Lato';
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #6d6f7d;
-  box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
-}
-
-::-webkit-scrollbar-track {
-  background-color: #d3d4d9;
-  box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -634,6 +625,22 @@ footer .text-muted {
     padding-right: 0rem;
     padding-left: 0rem;
     margin: 0 .5rem;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6d6f7d;
+    box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #d3d4d9;
+    box-shadow: inset 0 0 6px rgba(0, 4, 17, .3);
   }
 }
 

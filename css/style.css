@@ -25,6 +25,11 @@ h6 {
   font-size: 21px;
 }
 
+.logo {
+  position: relative;
+  bottom: 5px;
+}
+
 .navbar-custom {
   background-color: rgba(0, 0, 0, 0.5);
 }

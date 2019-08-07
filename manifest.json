@@ -46,5 +46,5 @@
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "/bcg_assignment"
+    "start_url": "/bcg_assignment/index.html"
 }

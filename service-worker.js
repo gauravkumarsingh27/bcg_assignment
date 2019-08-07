@@ -1,38 +1,34 @@
-// CODELAB: Update cache names any time any of the cached files change.
-const FILES_TO_CACHE = [
-    'offline.html',
-  ];
 
-  // CODELAB: Precache static resources here.
-evt.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log('[ServiceWorker] Pre-caching offline page');
-      return cache.addAll(FILES_TO_CACHE);
+// Files to cache
+var cacheName = 'js13kPWA-v1';
+var appShellFiles = [
+  '/'
+];
+
+
+// Installing Service Worker
+self.addEventListener('install', function(e) {
+  console.log('[Service Worker] Install');
+  e.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+      console.log('[Service Worker] Caching all: app shell and content');
+      return cache.addAll(contentToCache);
     })
-);
+  );
+});
 
-evt.waitUntil(
-  caches.keys().then((keyList) => {
-    return Promise.all(keyList.map((key) => {
-      if (key !== CACHE_NAME) {
-        console.log('[ServiceWorker] Removing old cache', key);
-        return caches.delete(key);
-      }
-    }));
-  })
-);
-
-// CODELAB: Add fetch event handler here.
-if (evt.request.mode !== 'navigate') {
-  // Not a page navigation, bail.
-  return;
-}
-evt.respondWith(
-    fetch(evt.request)
-        .catch(() => {
-          return caches.open(CACHE_NAME)
-              .then((cache) => {
-                return cache.match('offline.html');
-              });
-        })
-);
+// Fetching content using Service Worker
+self.addEventListener('fetch', function(e) {
+  e.respondWith(
+    caches.match(e.request).then(function(r) {
+      console.log('[Service Worker] Fetching resource: '+e.request.url);
+      return r || fetch(e.request).then(function(response) {
+        return caches.open(cacheName).then(function(cache) {
+          console.log('[Service Worker] Caching new resource: '+e.request.url);
+          cache.put(e.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
+});

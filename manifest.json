@@ -45,6 +45,7 @@
     "background_color": "#32c77f",
     "display": "fullscreen",
     "orientation": "portrait",
+    "prefer_related_applications": true,
     "scope": "/",
     "start_url": "/bcg_assignment/index.html"
 }

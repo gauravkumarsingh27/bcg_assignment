@@ -1,7 +1,10 @@
-// Registering Service Worker
+// Register service worker to control making site work offline
+
 if('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/bcg_assignment/service-worker.js');
-};
+  navigator.serviceWorker
+           .register('/bcg_assignment/service-worker.js')
+           .then(function() { console.log('Service Worker Registered'); });
+}
 
 // Code to handle install prompt on desktop
 
@@ -11,7 +14,7 @@ addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
-  //e.preventDefault();
+  e.preventDefault();
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI to notify the user they can add to home screen
